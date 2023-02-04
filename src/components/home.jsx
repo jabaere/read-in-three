@@ -12,7 +12,7 @@ import {
 
 import { Lines } from "./lines";
 import { Block } from "../layout/block";
-import dse from "../assets/pictures/material_2_baseColor.jpeg";
+
 import { Book } from "./game";
 // function VideoMaterial({ url }) {
 //   const texture = useVideoTexture(url)
@@ -32,7 +32,7 @@ function Scene() {
   useEffect(() => {
     console.log(scroll);
   }, [scroll]);
-  const texture = useLoader(THREE.TextureLoader, dse);
+
   useFrame((state) => {
     let { clock } = state;
     let elapsedTime = clock.getElapsedTime();

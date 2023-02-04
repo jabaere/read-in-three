@@ -6,7 +6,7 @@ import { CgMusic } from "react-icons/cg";
 export const Footer = () => {
   const [clicked,setClicked] = useState(false);
  
-  const [soundtrack] = useState(new Audio('src/assets/soundtrack/soundtrack.mp3'));
+  const [soundtrack] = useState(new Audio('soundtrack/soundtrack.mp3'));
   const [playingSoundTrack, setPlayingSoundTrack] = useState(true);
 
   const toggleSoundTrack = () => setPlayingSoundTrack(!playingSoundTrack);
