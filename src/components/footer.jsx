@@ -13,7 +13,7 @@ export const Footer = () => {
 
   
   const  handleMusicIconClick = () => {setClicked(!clicked);setPlayingSoundTrack(false)};
-  useLayoutEffect(() => {
+  useEffect(() => {
     playingSoundTrack ? soundtrack.play() : soundtrack.pause();
   },
   [playingSoundTrack]
