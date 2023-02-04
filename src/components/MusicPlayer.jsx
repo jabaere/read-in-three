@@ -11,9 +11,9 @@ function MusicPlayer() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const audioTracks = [
-    "src/assets/music/lumx.mp3",
-    "src/assets/music/Marnik x Orange INC - Across The Sun.mp3",
-    "src/assets/music/mazza-feat_-sary-bang-bang-klaas-remix.mp3",
+    "./src/assets/music/lumx.mp3",
+    "./src/assets/music/Marnik x Orange INC - Across The Sun.mp3",
+    "./src/assets/music/mazza-feat_-sary-bang-bang-klaas-remix.mp3",
   ];
 
   useEffect(() => {
