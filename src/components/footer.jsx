@@ -7,13 +7,16 @@ export const Footer = () => {
   const [clicked,setClicked] = useState(false);
  
   const [soundtrack] = useState(new Audio('soundtrack/soundtrack.mp3'));
-  const [playingSoundTrack, setPlayingSoundTrack] = useState(true);
+  const [playingSoundTrack, setPlayingSoundTrack] = useState(false);
 
   const toggleSoundTrack = () => setPlayingSoundTrack(!playingSoundTrack);
 
   
   const  handleMusicIconClick = () => {setClicked(!clicked);setPlayingSoundTrack(false)};
+  
+
   useEffect(() => {
+    soundtrack.load();
     playingSoundTrack ? soundtrack.play() : soundtrack.pause();
   },
   [playingSoundTrack]
